@@ -1,6 +1,6 @@
 from django.db import models
 
-class TaskModels(models.model):
+class TaskModels(models.Model):
     class Status(models.TextChoices):
         AGUARDANDO_ANALISE = 'aguardando_analise', 'Aguardando análise'
         ABERTO = 'aberto', 'Aberto'
