@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
     {% csrf_token %}
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio earum velit ex maxime veniam, est iste eaque animi a ullam possimus, saepe, enim facilis? Hic autem non neque repudiandae!
-    </p>
+    
+    <header>
+        <h1>HelpDesk</h1>
+
+        <div>
+            <i class="material-icons">chat bubble</i>
+            <i class="material-icons">person</i>
+        </div>
+    </header>
+
+    <menu>
+        <ul>
+            <li>
+                <p>Meus Chamados</p>
+            </li>
+
+            <li>
+                <p>Novo Chamado</p>
+            </li>
+
+            <li>
+                <p>Histórico</p>
+            </li>
+        </ul>
+    </menu>
+
+    <main>
+        <div id="cards">
+            <div class="card">
+                <p>Total de Chamados</p>
+            </div>
+            <div class="card">
+                <p>Chamados Abertos</p>
+            </div>
+            <div class="card">
+                <p>Chamados em Andamento</p>
+            </div>
+            <div class="card">
+                <p>Chamados Fechados Hoje</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
